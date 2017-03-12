@@ -131,7 +131,7 @@ $SIG{HUP} = sub {
 
 $SIG{PIPE} = sub { die "pipe broke" };
 
-$SIG{CHLD} = 'IGNORE';
+$SIG{CHLD} = 'DEFAULT';
 
 sub send_event {
 	my $msg = shift;
