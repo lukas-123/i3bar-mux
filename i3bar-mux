@@ -68,8 +68,6 @@ if ($#ARGV > 0 and $ARGV[0] eq '-c') {
 	$commands_file = $ARGV[1];
 }
 
-open(STDERR, ">", "i3bar-mux.err");
-
 sub start_command {
 	my $command = shift;
 	my ($reader, $writer);
